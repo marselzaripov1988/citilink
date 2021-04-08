@@ -1,0 +1,57 @@
+GET http://localhost:8080/products
+
+###
+
+POST http://localhost:8080/products/caps
+Content-Type: application/json
+
+{
+  "id": 0,
+  "name": "Red Cap",
+  "price": 500,
+  "color": "red",
+  "size": "M"
+}
+
+###
+
+POST http://localhost:8080/products/books
+Content-Type: application/json
+
+{
+  "id": 0,
+  "name": "Anna Karenina",
+  "price": 900,
+  "author": "Tolstoy"
+}
+
+###
+
+GET http://localhost:8080/products/search?text=anna
+
+###
+
+GET http://localhost:8080/products/search?text=tolstoy
+
+###
+
+GET http://localhost:8080/products/catalog/books
+
+###
+
+GET http://localhost:8080/products/catalog/caps
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
